@@ -48,10 +48,10 @@ Coming Soon! (delayed due to a corrupted disk requiring re-training)
 If you find this code useful for your research, please use the following BibTeX entry.
 
 ```bibtex
-@article{sun2021loftr,
+@article{SCENES2024Kloepfer,
   title={SCENES: Subpixel Correspondence Estimation With Epipolar Supervision},
   author={Kloepfer, Dominik A. and Henriques, Jo\~ao F. and Campbell, Dylan},
-  journal={Proceedings of the International Conference on 3D Vision (3DV)},
+  inproceedings={Proceedings of the International Conference on 3D Vision (3DV)},
   year={2024},
   month={mar}
 }
