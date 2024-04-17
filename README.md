@@ -14,6 +14,8 @@ We release implementations of the epipolar regression and the epipolar classific
 
 In principle, these should be able to serve as drop-in replacements for regression and classification losses that use ground-truth correspondences, but depending on the model that is fine-tuned some adjustments to the input / output of the functions may need to be made.
 
+Note: [ASpanFormer](https://aspanformer.github.io), which is one of the models we fine-tune in the paper, also uses a flow loss that requires (coarse) ground-truth correspondences. Similar to the classification loss, we replace those coarse correspondences with the location of the highest-confidence patch that is on the epipolar line as pseudo-ground truth correspondences. For a more convenient adaptation in this and similar cases, we provide a function to compute these pseudo-ground truth correspondences in the `epipolar_losses/epipolar_classification_loss.py` file.
+
 ### Scripts
 
 #### Bootstrapping: Estimating Fundamental Matrices
